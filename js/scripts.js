@@ -3,8 +3,6 @@ function replaceChamp(e) {
     
     let img = document.getElementById(e.target.id);
     let curChamp = document.getElementById("curr_champ");
-    console.log(img.src);
-    console.log(curChamp);
     curChamp.src = img.src;
 }
 
@@ -84,7 +82,7 @@ function showImage() {
     t += offY;
 
     var newImage = document.createElement("img");
-    newImage.setAttribute('src', '/imgs/poop.png');
+    newImage.setAttribute('src', 'imgs/poop.png');
     newImage.setAttribute('class', 'overlays');
     newImage.style.left = l + "px";
     newImage.style.top = t + "px";
