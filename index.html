@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>A Basic HTML5 Template</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/styles.css">
+
+</head>
+
+<body>
+  <header class="header">
+		<h1 class="logo"><a href="#">PooperForFood.org</a></h1>
+      <ul class="main-nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about_us.html">About Us</a></li>
+          <li><a href="/partnership.html">Partnerships</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+      </ul>
+	</header> 
+  <div>
+
+
+  </div>
+    <img src="/imgs/comic.png" alt="dog comic" class="landing-page-comic">
+  
+    <div class="text_prompt">
+
+      <center><h1>Bad Co-worker? Horrible boss?</h1></center>
+
+      <h2>Time to return the <strike>favor</strike> CRAP</h2>
+      <p class="text_encouragement">Buy poop from your local pet shelter and send it to your enemies!!! Relief your anger while supporting a good cause. Select your champion below, and we will doodoo the rest!</p>
+      <h3>Select your professional pooper below!</h3>
+    </div>
+    <div class="dog_champions" onclick="replaceChamp(event)">
+      <div><img id="d1" src="/imgs/dog_champ1.png" alt=""><br><center>Sam</center><p>Successfull Deliveries: 200</p></div>
+      <div><img id="d2" src="/imgs/dog_champ2.png" alt=""><br><center>Buddy</center><p>Successfull Deliveries: 180</p></div>
+      <div><img id="d3" src="/imgs/dog_champ3.png" alt=""><br><center>Rocky</center><p>Successfull Deliveries: 120</p></div>
+    </div>
+
+
+    <center><h3 id="clicker_msg">Found your PFF? Now Make Them Pay!</h3></center>
+    <div class="poop_clicker">
+      <div><img id="curr_champ" src="/imgs/champ_placeholder.png" alt="curr_champ">
+        <br><p id="money">Food Money: $0.0</p>
+      </div>
+
+      <button class="button" onclick="clickerUpdate()">Send Poop!</button>
+      <div id="enemy_box"><img id="enemy" src="/imgs/enemy_placeholder.png" alt="">
+        <br><p id="poop_amt">Poop Amount: 0.0 oz</p>
+      </div>
+    </div>
+    
+    <center><button class="button" id="purchase_btn"  onclick="location.href='/checkout.html'" type="button">Purchase<img src="" alt=""></button></center>
+    
+  <!-- your content here... -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
